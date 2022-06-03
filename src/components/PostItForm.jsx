@@ -11,6 +11,7 @@ function PostItForm({ onSubmit }) {
     const newPostIt = {
       id: uuidv4(),
       text: input,
+      isediting: false,
     };
     onSubmit(newPostIt);
   };
