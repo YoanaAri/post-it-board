@@ -1,22 +1,15 @@
 import React, { useState } from 'react';
-import { AiOutlineDelete, AiOutlineEdit, AiOutlineSave } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineEdit, AiOutlineSave } from 'react-icons/ai';
 
 function PostIt({
   id, text, editPostIt, deletePostIt, isediting, editingPostIt,
 }) {
-  const [input, setInput] = useState('');
-  const typing = (e) => {
-    setInput(e.target.value);
-  };
-  const adding = (e) => {
-    e.preventDefault();
-    const addingPostIt = {
-      text: input,
-    };
-    text(addingPostIt);
-  };
+  //
+  const [input, setInput] = useState(text);
+  //
+  //
   return (
-    <div className=" text-base flex-col text-center m-2 p-2 bg-amber-200 w-44 h-44 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px">
+    <div className=" text-base flex-col text-center m-2 p-2 bg-amber-200 w-44 h-44 shadow-2xl">
       <div className="flex">
         <div
           className="ml-32 cursor-pointer"
@@ -34,16 +27,16 @@ function PostIt({
           role="button"
           tabIndex={0}
         >
-          <AiOutlineDelete />
+          <AiOutlineClose />
         </div>
       </div>
       {isediting
         ? (
           <>
             <textarea
-              className="bg-amber-200 whitespace-normal w-32 h-32 cursor-text"
-              onChange={typing}
-              onSubmit={adding}
+              className="border border-solid border-amber-600 bg-amber-200 whitespace-normal w-32 h-32 cursor-text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
               aria-hidden="true"
             >
               {text}
@@ -63,7 +56,7 @@ function PostIt({
           <div
             className="bg-amber-200"
           >
-            <p className="whitespace-normal text-center w-40 h-32">
+            <p className="whitespace-normal truncate text-center w-40 h-32">
               {text}
             </p>
           </div>
