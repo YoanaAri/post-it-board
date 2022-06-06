@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { AiFillDelete, AiOutlineDelete } from 'react-icons/ai';
 import PostItForm from './PostItForm';
 import PostIt from './PostIt';
 import useLocalStorage from './useLocalStorage';
-import Bin from './Bin';
 
 function PostitList() {
   //
@@ -18,7 +19,7 @@ function PostitList() {
   };
   //
   //
-  const [deletedPostIt, setDeletedPostIt] = useState([]);
+  const [deletedPostIt, setDeletedPostIt] = useLocalStorage('deletedPostIt', []);
   //
   //
   // Remove the postit from allPostIt and add it to deletedPostIt
@@ -57,14 +58,20 @@ function PostitList() {
   };
   //
   //
+  const [isempty, setIsempty] = useState(true);
   useEffect(() => {
-    <Bin
-      isempty="false"
-    />;
+    const updateIsempty = deletedPostIt.length <= 0;
+    setIsempty(updateIsempty);
   }, [deletedPostIt]);
   return (
     <div className="flex flex-row flex-wrap">
-      <Bin />
+      <Link to="/Bin">
+        {
+        isempty
+          ? <AiOutlineDelete className="h-16 w-16 cursor-pointer" />
+          : <AiFillDelete className="h-16 w-16 cursor-pointer" />
+        }
+      </Link>
       <PostItForm
         onSubmit={addPostIt}
       />

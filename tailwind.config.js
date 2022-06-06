@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         boardimg: "url('img/boardimg.png')",
+        gridimg: "url('img/gridimg.png')",
       },
     },
   },
