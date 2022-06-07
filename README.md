@@ -1,15 +1,8 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/YoanaAri/post-it-board">
-    <img src="/img/logo.png" alt="Logo" width="80" height="80">
+    <img src="src/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Post It Board</h3>
@@ -142,41 +135,41 @@ Useful examples of how to use the app
 
 ### Add Post its
 
-<img src="img/emptyHome.png" alt="add Post it example" width="80" height="80">
+<img src="src/img/emptyHome.png" alt="add Post it example" width="80" height="80">
 
-<img src="img/addingFirstPostit.png" alt="add Post it example" width="80" height="80">
+<img src="src/img/addingFirstPostit.png" alt="add Post it example" width="80" height="80">
 
-<img src="img/firstPostit.png" alt="add Post it example" width="80" height="80">
+<img src="src/img/firstPostit.png" alt="add Post it example" width="80" height="80">
 
 ### Edit Post it
 
-<img src="img/firstPostit.png" alt="edit Post it example" width="80" height="80">
+<img src="src/img/firstPostit.png" alt="edit Post it example" width="80" height="80">
 
-<img src="img/editingExample.png" alt="edit Post it example" width="80" height="80">
+<img src="src/img/editingExample.png" alt="edit Post it example" width="80" height="80">
 
-<img src="img/editedExample.png" alt="edit Post it example" width="80" height="80">
+<img src="src/img/editedExample.png" alt="edit Post it example" width="80" height="80">
 
 ### Delete Post it
 
-<img src="img/editedExample.png" alt="delete Post it example" width="80" height="80">
+<img src="src/img/editedExample.png" alt="delete Post it example" width="80" height="80">
 
-<img src="img/binWithPostits.png" alt="delete Post it example" width="80" height="80">
+<img src="src/img/binWithPostits.png" alt="delete Post it example" width="80" height="80">
 
-<img src="img/deletedPostit.png" alt="delete Post it example" width="80" height="80">
+<img src="src/img/deletedPostit.png" alt="delete Post it example" width="80" height="80">
 
 ### Undo Delete Post it
 
-<img src="img/deletedPostit.png" alt="undo delete Post it example" width="80" height="80">
+<img src="src/img/deletedPostit.png" alt="undo delete Post it example" width="80" height="80">
 
-<img src="img/editedExample.png" alt="undo delete Post it example" width="80" height="80">
+<img src="src/img/editedExample.png" alt="undo delete Post it example" width="80" height="80">
 
 ### Empty Trush
 
-<img src="img/deletedPostit.png" alt="empty trush example" width="80" height="80">
+<img src="src/img/deletedPostit.png" alt="empty trush example" width="80" height="80">
 
-<img src="img/emptyBin.png" alt="empty trush example" width="80" height="80">
+<img src="src/img/emptyBin.png" alt="empty trush example" width="80" height="80">
 
-<img src="img/emptyHome.png" alt="empty trush example" width="80" height="80">
+<img src="src/img/emptyHome.png" alt="empty trush example" width="80" height="80">
 
 Post it's state is saved in LocalStorage so you can refresh the page and still see the Post its. Be sure you dont have your browser configured to deny permission to persist data.
 
@@ -186,22 +179,8 @@ Post it's state is saved in LocalStorage so you can refresh the page and still s
 
 ## Contact
 
-Yoana Arisitmuno - yoana.aristimuno@gmail.com
+Yoana Arisitmuno - yoana.aristimuno@gmail.com - Ln [https://linkedin.com/in/yoana-aristimuño-716a25213] (https://linkedin.com/in/yoana-aristimuño-716a25213/)
 
 Project Link: [https://github.com/YoanaAri/post-it-board](https://github.com/YoanaAri/post-it-board)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/YoanaAri/post-it-board.svg?style=for-the-badge
-[contributors-url]: https://github.com/YoanaAri/post-it-board/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/YoanaAri/post-it-board.svg?style=for-the-badge
-[forks-url]: https://github.com/YoanaAri/post-it-board/network/members
-[stars-shield]: https://img.shields.io/github/stars/YoanaAri/post-it-board.svg?style=for-the-badge
-[stars-url]: https://github.com/YoanaAri/post-it-board/stargazers
-[issues-shield]: https://img.shields.io/github/issues/YoanaAri/post-it-board.svg?style=for-the-badge
-[issues-url]: https://github.com/YoanaAri/post-it-board/issues
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/yoana-aristimuño-716a25213/
