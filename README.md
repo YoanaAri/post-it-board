@@ -135,41 +135,41 @@ Useful examples of how to use the app
 
 ### Add Post its
 
-<img src="src/img/examples/emptyHome.PNG" alt="add Post it example" width="80" height="80">
+<img src="src/img/examples/emptyHome.PNG" alt="add Post it example" width="240" height="160">
 
-<img src="src/img/examples/addingFirstPostit.PNG" alt="add Post it example" width="80" height="80">
+<img src="src/img/examples/addingFirstPostit.PNG" alt="add Post it example" width="240" height="160">
 
-<img src="src/img/examples/firstPostit.PNG" alt="add Post it example" width="80" height="80">
+<img src="src/img/examples/firstPostit.PNG" alt="add Post it example" width="240" height="160">
 
 ### Edit Post it
 
-<img src="src/img/examples/firstPostit.PNG" alt="edit Post it example" width="80" height="80">
+<img src="src/img/examples/firstPostit.PNG" alt="edit Post it example" width="240" height="160">
 
-<img src="src/img/examples/editingExample.PNG" alt="edit Post it example" width="80" height="80">
+<img src="src/img/examples/editingExample.PNG" alt="edit Post it example" width="240" height="160">
 
-<img src="src/img/examples/editedExample.PNG" alt="edit Post it example" width="80" height="80">
+<img src="src/img/examples/editedExample.PNG" alt="edit Post it example" width="240" height="160">
 
 ### Delete Post it
 
-<img src="src/img/examples/editedExample.PNG" alt="delete Post it example" width="80" height="80">
+<img src="src/img/examples/editedExample.PNG" alt="delete Post it example" width="240" height="160">
 
-<img src="src/img/examples/binWithPostits.PNG" alt="delete Post it example" width="80" height="80">
+<img src="src/img/examples/binWithPostits.PNG" alt="delete Post it example" width="240" height="160">
 
-<img src="src/img/examples/deletedPostit.PNG" alt="delete Post it example" width="80" height="80">
+<img src="src/img/examples/deletedPostit.PNG" alt="delete Post it example" width="240" height="160">
 
 ### Undo Delete Post it
 
-<img src="src/img/examples/deletedPostit.PNG" alt="undo delete Post it example" width="80" height="80">
+<img src="src/img/examples/deletedPostit.PNG" alt="undo delete Post it example" width="240" height="160">
 
-<img src="src/img/examples/editedExample.PNG" alt="undo delete Post it example" width="80" height="80">
+<img src="src/img/examples/editedExample.PNG" alt="undo delete Post it example" width="240" height="160">
 
 ### Empty Trush
 
-<img src="src/img/examples/deletedPostit.PNG" alt="empty trush example" width="80" height="80">
+<img src="src/img/examples/deletedPostit.PNG" alt="empty trush example" width="240" height="160">
 
-<img src="src/img/examples/emptyBin.PNG" alt="empty trush example" width="80" height="80">
+<img src="src/img/examples/emptyBin.PNG" alt="empty trush example" width="240" height="160">
 
-<img src="src/img/examples/emptyHome.PNG" alt="empty trush example" width="80" height="80">
+<img src="src/img/examples/emptyHome.PNG" alt="empty trush example" width="240" height="160">
 
 Post it's state is saved in LocalStorage so you can refresh the page and still see the Post its. Be sure you dont have your browser configured to deny permission to persist data.
 
