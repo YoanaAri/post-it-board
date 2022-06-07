@@ -10,6 +10,25 @@ function Bin() {
     const dPostIt = JSON.parse(localStorage.getItem('deletedPostIt'));
     setAllDeletedPosIt(dPostIt);
   }, []);
+  //
+  const permanentDelete = () => {
+    localStorage.removeItem('deletedPostIt');
+    setAllDeletedPosIt([]);
+  };
+  const removePostIt = (id) => {
+    const updateAllDeletePostIt = allDeletedPostIt.filter((postIt) => postIt.id !== id);
+    localStorage.setItem('deletedPostIt', JSON.stringify(updateAllDeletePostIt));
+    setAllDeletedPosIt(updateAllDeletePostIt);
+  };
+  //
+  const returnPostIt = (id) => {
+    const auxDeletedPostIt = allDeletedPostIt.filter((postIt) => postIt.id === id);
+    const aux2 = JSON.parse(localStorage.getItem('allPostIt'));
+    const update = [auxDeletedPostIt[0], ...aux2];
+    localStorage.setItem('allPostIt', JSON.stringify(update));
+    removePostIt(id);
+  };
+  //
   return (
     <div className="flex flex-col bg-gray-200 p-8 rounded-xl shadow-2xl">
       <div>
@@ -22,8 +41,10 @@ function Bin() {
               allDeletedPostIt.map((binPostIt) => (
                 <PostIt
                   key={binPostIt.id}
+                  id={binPostIt.id}
                   text={binPostIt.text}
                   isdeleted
+                  returnPostIt={returnPostIt}
                 />
               )))
             : null}
@@ -32,7 +53,7 @@ function Bin() {
       <button
         type="button"
         className="place-content-end"
-        onClick={() => localStorage.removeItem('deletedPostIt')}
+        onClick={() => permanentDelete()}
       >
         Empty trash
       </button>

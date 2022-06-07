@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineEdit, AiOutlineSave } from 'react-icons/ai';
+import {
+  AiOutlineClose, AiOutlineEdit, AiOutlineSave, AiOutlineUndo,
+} from 'react-icons/ai';
 
 function PostIt({
-  id, text, editPostIt, deletePostIt, isediting, editingPostIt, isdeleted,
+  id, text, editPostIt, deletePostIt, isediting, editingPostIt, isdeleted, returnPostIt,
 }) {
   //
   const [input, setInput] = useState(text);
@@ -11,7 +13,17 @@ function PostIt({
   return (
     <div className=" text-base flex-col text-center m-2 p-2 bg-amber-200 w-44 h-44 shadow-2xl">
       {isdeleted
-        ? null
+        ? (
+          <div
+            className="ml-32 cursor-pointer"
+            onClick={() => returnPostIt(id)}
+            onKeyDown={() => returnPostIt(id)}
+            role="button"
+            tabIndex={0}
+          >
+            <AiOutlineUndo />
+          </div>
+        )
         : (
           <div className="flex">
             <div
