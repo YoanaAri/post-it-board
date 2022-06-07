@@ -58,7 +58,7 @@ Technologies we used:
   <li>React</li>
 </ul>
 
-In this App you will can: add, edit, delete, recover and permanent delete post its form a board
+In this App you will can: add, edit, delete, recover and permanent delete post its from a board
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

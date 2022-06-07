@@ -71,11 +71,11 @@ function Home() {
   //
   return (
     <div className="flex flex-col p-8">
-      <Link to="/Bin">
+      <Link to="/Bin" className="h-8 w-8 cursor-pointer">
         {
         isempty
-          ? <AiOutlineDelete className="h-8 w-8 cursor-pointer" />
-          : <AiFillDelete className="h-8 w-8 cursor-pointer" />
+          ? <AiOutlineDelete className="h-8 w-8" />
+          : <AiFillDelete className="h-8 w-8" />
         }
       </Link>
 
