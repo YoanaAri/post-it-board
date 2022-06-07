@@ -27,22 +27,22 @@ function PostIt({
         : (
           <div className="flex">
             <div
-              className="ml-32 cursor-pointer"
-              onClick={() => editingPostIt(id)}
-              onKeyDown={() => editingPostIt(id)}
-              role="button"
-              tabIndex={0}
-            >
-              <AiOutlineEdit />
-            </div>
-            <div
-              className="ml-1 cursor-pointer"
+              className="m-1 cursor-pointer"
               onClick={() => deletePostIt(id)}
               onKeyDown={() => deletePostIt(id)}
               role="button"
               tabIndex={0}
             >
               <AiOutlineClose />
+            </div>
+            <div
+              className="m-1 cursor-pointer"
+              onClick={() => editingPostIt(id)}
+              onKeyDown={() => editingPostIt(id)}
+              role="button"
+              tabIndex={0}
+            >
+              <AiOutlineEdit />
             </div>
           </div>
         )}

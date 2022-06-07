@@ -1,25 +1,23 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Logo from '../img/logo.png';
 
 import Bin from './Bin';
 import Home from './Home';
 
 function Root() {
   return (
-    <div className="p-8 bg-gridimg bg-repeat">
-      <div className="flex-wrap justify-center items-center">
-        <div className="flex flex-row">
-          <h1 className="pl-16 grow text-center text-3xl font-bold my-5 mx-0">Post It Board</h1>
-        </div>
-        <div className="min-h-screen p-6 m-2.5">
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/Bin" element={<Bin />} />
-            </Routes>
-          </BrowserRouter>
-        </div>
+    <div className="p-8 bg-gridimg bg-repeat min-h-screen">
+      <div className="flex flex-row place-content-center">
+        <h1 className="py-5 text-center text-3xl font-bold">Post It Board</h1>
+        <img src={Logo} alt="Logo" className="h-16 w-16" />
       </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Bin" element={<Bin />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

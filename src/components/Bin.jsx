@@ -52,7 +52,7 @@ function Bin() {
       </div>
       <button
         type="button"
-        className="place-content-end"
+        className="place-self-center h-6 w-20 p-1 text-xs cursor-pointer bg-gray-400 rounded"
         onClick={() => permanentDelete()}
       >
         Empty trash
