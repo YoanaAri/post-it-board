@@ -22,8 +22,8 @@ function Home() {
   // Add postit to deletedPostIt
   //
   const saveDeletedPostit = (id) => {
-    const auxDeletedPostIt = allPostIt.filter((postIt) => postIt.id === id);
-    const updateDeletedPostIt = [auxDeletedPostIt[0], ...deletedPostIt];
+    const aux = allPostIt.filter((postIt) => postIt.id === id);
+    const updateDeletedPostIt = [aux[0], ...deletedPostIt];
     setDeletedPostIt(updateDeletedPostIt);
   };
   //
@@ -39,11 +39,11 @@ function Home() {
   //
   const editingPostIt = (id) => {
     const updateAllPostIt = allPostIt.map((postIt) => {
-      const auxPostIt = { ...postIt };
+      const aux = { ...postIt };
       if (postIt.id === id) {
-        auxPostIt.isediting = true;
+        aux.isediting = true;
       }
-      return auxPostIt;
+      return aux;
     });
     setAllPosIt(updateAllPostIt);
   };
@@ -52,12 +52,12 @@ function Home() {
   //
   const editPostIt = (id, value) => {
     const updateAllPostIt = allPostIt.map((postIt) => {
-      const auxPostIt = { ...postIt };
+      const aux = { ...postIt };
       if (postIt.id === id) {
-        auxPostIt.text = value;
-        auxPostIt.isediting = !postIt.isediting;
+        aux.text = value;
+        aux.isediting = !postIt.isediting;
       }
-      return auxPostIt;
+      return aux;
     });
     setAllPosIt(updateAllPostIt);
   };
@@ -85,9 +85,8 @@ function Home() {
         />
         {
           allPostIt.map((postIt) => (
-            <div className="flex felx-row flex-wrap">
+            <div className="flex felx-row flex-wrap" key={postIt.id}>
               <PostIt
-                key={postIt.id}
                 id={postIt.id}
                 text={postIt.text}
                 isediting={postIt.isediting}

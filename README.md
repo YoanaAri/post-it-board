@@ -135,41 +135,41 @@ Useful examples of how to use the app
 
 ### Add Post its
 
-<img src="src/img/emptyHome.png" alt="add Post it example" width="80" height="80">
+<img src="src/img/examples/emptyHome.PNG" alt="add Post it example" width="80" height="80">
 
-<img src="src/img/addingFirstPostit.png" alt="add Post it example" width="80" height="80">
+<img src="src/img/examples/addingFirstPostit.png" alt="add Post it example" width="80" height="80">
 
-<img src="src/img/firstPostit.png" alt="add Post it example" width="80" height="80">
+<img src="src/img/examples/firstPostit.png" alt="add Post it example" width="80" height="80">
 
 ### Edit Post it
 
-<img src="src/img/firstPostit.png" alt="edit Post it example" width="80" height="80">
+<img src="src/img/examples/firstPostit.png" alt="edit Post it example" width="80" height="80">
 
-<img src="src/img/editingExample.png" alt="edit Post it example" width="80" height="80">
+<img src="src/img/examples/editingExample.png" alt="edit Post it example" width="80" height="80">
 
-<img src="src/img/editedExample.png" alt="edit Post it example" width="80" height="80">
+<img src="src/img/examples/editedExample.png" alt="edit Post it example" width="80" height="80">
 
 ### Delete Post it
 
-<img src="src/img/editedExample.png" alt="delete Post it example" width="80" height="80">
+<img src="src/img/examples/editedExample.png" alt="delete Post it example" width="80" height="80">
 
-<img src="src/img/binWithPostits.png" alt="delete Post it example" width="80" height="80">
+<img src="src/img/examples/binWithPostits.png" alt="delete Post it example" width="80" height="80">
 
-<img src="src/img/deletedPostit.png" alt="delete Post it example" width="80" height="80">
+<img src="src/img/examples/deletedPostit.png" alt="delete Post it example" width="80" height="80">
 
 ### Undo Delete Post it
 
-<img src="src/img/deletedPostit.png" alt="undo delete Post it example" width="80" height="80">
+<img src="src/img/examples/deletedPostit.png" alt="undo delete Post it example" width="80" height="80">
 
-<img src="src/img/editedExample.png" alt="undo delete Post it example" width="80" height="80">
+<img src="src/img/examples/editedExample.png" alt="undo delete Post it example" width="80" height="80">
 
 ### Empty Trush
 
-<img src="src/img/deletedPostit.png" alt="empty trush example" width="80" height="80">
+<img src="src/img/examples/deletedPostit.png" alt="empty trush example" width="80" height="80">
 
-<img src="src/img/emptyBin.png" alt="empty trush example" width="80" height="80">
+<img src="src/img/examples/emptyBin.png" alt="empty trush example" width="80" height="80">
 
-<img src="src/img/emptyHome.png" alt="empty trush example" width="80" height="80">
+<img src="src/img/examples/emptyHome.png" alt="empty trush example" width="80" height="80">
 
 Post it's state is saved in LocalStorage so you can refresh the page and still see the Post its. Be sure you dont have your browser configured to deny permission to persist data.
 
@@ -179,7 +179,7 @@ Post it's state is saved in LocalStorage so you can refresh the page and still s
 
 ## Contact
 
-Yoana Arisitmuno - yoana.aristimuno@gmail.com - Ln [https://linkedin.com/in/yoana-aristimuño-716a25213] (https://linkedin.com/in/yoana-aristimuño-716a25213/)
+Yoana Arisitmuno - yoana.aristimuno@gmail.com - Ln: [www.linkedin.com/in/yoana-aristimuno](www.linkedin.com/in/yoana-aristimuno)
 
 Project Link: [https://github.com/YoanaAri/post-it-board](https://github.com/YoanaAri/post-it-board)
 

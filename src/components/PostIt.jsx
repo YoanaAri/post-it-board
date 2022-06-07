@@ -50,7 +50,7 @@ function PostIt({
         ? (
           <>
             <textarea
-              className="border border-solid border-amber-600 bg-amber-200 whitespace-normal w-32 h-32 cursor-text"
+              className="border border-solid border-amber-600 bg-amber-200 whitespace-normal w-32 h-28 cursor-text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               aria-hidden="true"

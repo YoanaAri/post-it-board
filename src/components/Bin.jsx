@@ -22,9 +22,9 @@ function Bin() {
   };
   //
   const returnPostIt = (id) => {
-    const auxDeletedPostIt = allDeletedPostIt.filter((postIt) => postIt.id === id);
+    const aux = allDeletedPostIt.filter((postIt) => postIt.id === id);
     const aux2 = JSON.parse(localStorage.getItem('allPostIt'));
-    const update = [auxDeletedPostIt[0], ...aux2];
+    const update = [aux[0], ...aux2];
     localStorage.setItem('allPostIt', JSON.stringify(update));
     removePostIt(id);
   };
