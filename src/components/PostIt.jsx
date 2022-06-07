@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineEdit, AiOutlineSave } from 'react-icons/ai';
 
 function PostIt({
-  id, text, editPostIt, deletePostIt, isediting, editingPostIt,
+  id, text, editPostIt, deletePostIt, isediting, editingPostIt, isdeleted,
 }) {
   //
   const [input, setInput] = useState(text);
@@ -10,26 +10,30 @@ function PostIt({
   //
   return (
     <div className=" text-base flex-col text-center m-2 p-2 bg-amber-200 w-44 h-44 shadow-2xl">
-      <div className="flex">
-        <div
-          className="ml-32 cursor-pointer"
-          onClick={() => editingPostIt(id)}
-          onKeyDown={() => editingPostIt(id)}
-          role="button"
-          tabIndex={0}
-        >
-          <AiOutlineEdit />
-        </div>
-        <div
-          className="ml-1 cursor-pointer"
-          onClick={() => deletePostIt(id)}
-          onKeyDown={() => deletePostIt(id)}
-          role="button"
-          tabIndex={0}
-        >
-          <AiOutlineClose />
-        </div>
-      </div>
+      {isdeleted
+        ? null
+        : (
+          <div className="flex">
+            <div
+              className="ml-32 cursor-pointer"
+              onClick={() => editingPostIt(id)}
+              onKeyDown={() => editingPostIt(id)}
+              role="button"
+              tabIndex={0}
+            >
+              <AiOutlineEdit />
+            </div>
+            <div
+              className="ml-1 cursor-pointer"
+              onClick={() => deletePostIt(id)}
+              onKeyDown={() => deletePostIt(id)}
+              role="button"
+              tabIndex={0}
+            >
+              <AiOutlineClose />
+            </div>
+          </div>
+        )}
       {isediting
         ? (
           <>

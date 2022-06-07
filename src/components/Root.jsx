@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import App from '../App';
+
 import Bin from './Bin';
+import Home from './Home';
 
 function Root() {
   return (
@@ -13,7 +14,7 @@ function Root() {
         <div className="min-h-screen p-6 m-2.5">
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<App />} />
+              <Route path="/" element={<Home />} />
               <Route path="/Bin" element={<Bin />} />
             </Routes>
           </BrowserRouter>

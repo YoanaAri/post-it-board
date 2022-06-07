@@ -5,7 +5,7 @@ import PostItForm from './PostItForm';
 import PostIt from './PostIt';
 import useLocalStorage from './useLocalStorage';
 
-function PostitList() {
+function Home() {
   //
   const [allPostIt, setAllPosIt] = useLocalStorage('allPostIt', []);
   //
@@ -22,12 +22,18 @@ function PostitList() {
   const [deletedPostIt, setDeletedPostIt] = useLocalStorage('deletedPostIt', []);
   //
   //
-  // Remove the postit from allPostIt and add it to deletedPostIt
+  // Add postit to deletedPostIt
+  const saveDeletedPostit = (id) => {
+    const auxDeletedPostIt = allPostIt.filter((postIt) => postIt.id === id);
+    const updateDeletedPostIt = [auxDeletedPostIt[0], ...deletedPostIt];
+    setDeletedPostIt(updateDeletedPostIt);
+  };
+  //
+  // Remove the postit from allPostIt
   const deletePostIt = (id) => {
     const updateAllPostIt = allPostIt.filter((postIt) => postIt.id !== id);
-    const updateDeletedPostIt = allPostIt.filter((postIt) => postIt.id === id);
-    setDeletedPostIt(updateDeletedPostIt, ...deletedPostIt);
     setAllPosIt(updateAllPostIt);
+    saveDeletedPostit(id);
   };
   //
   //
@@ -63,6 +69,7 @@ function PostitList() {
     const updateIsempty = deletedPostIt.length <= 0;
     setIsempty(updateIsempty);
   }, [deletedPostIt]);
+  //
   return (
     <div className="flex flex-row flex-wrap">
       <Link to="/Bin">
@@ -86,6 +93,7 @@ function PostitList() {
               deletePostIt={deletePostIt}
               editPostIt={editPostIt}
               editingPostIt={editingPostIt}
+              isdeleted={false}
             />
           ))
         }
@@ -94,4 +102,4 @@ function PostitList() {
   );
 }
 
-export default PostitList;
+export default Home;
