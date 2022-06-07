@@ -54,7 +54,9 @@
 
 ## About The Project
 
-Este es un proyecto realizado con lo aprendido en el bootcamp 2022 de Moove It:
+This proyect had made it after four intensive weeks of a coding bootcamp to empower women in the tech industry, MooveCamp '22, carried out for Moove It.
+
+Technologies we used:
 
 <ul>
   <li>Html</li>
@@ -62,7 +64,8 @@ Este es un proyecto realizado con lo aprendido en el bootcamp 2022 de Moove It:
   <li>JavaScript</li>
   <li>React</li>
 </ul>
-En esta app podrás: agregar, editar, eliminar, recuperar y eliminar permanentemente post its de un board.
+
+In this App you will can: add, edit, delete, recover and permanent delete post its form a board
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -80,7 +83,7 @@ To get a local copy up and running follow these simple example steps:
 
 ### Prerequisites
 
-React Icon
+React Icon (added to use icons)
 
 - npm
 
@@ -88,7 +91,7 @@ React Icon
   npm install react-icons --save
   ```
 
-  React Dom
+  React Dom (added to managed the aplication routing)
 
 - npm
 
@@ -96,7 +99,7 @@ React Icon
   npm install react-router-dom
   ```
 
-  React
+  Uuid (added to creat a random and unique id)
 
 - npm
   ```sh
@@ -107,12 +110,15 @@ React Icon
 
 1.  Clone the repo
 
-````sh
-git clone https://github.com/YoanaAri/post-it-board
+    ````sh
+    git clone https://github.com/YoanaAri/post-it-board
+    ````
+
 2. Install NPM packages
-```sh
-npm install
-````
+
+    ```sh
+    npm install
+    ````
 
 3. Run the proyect
 
@@ -120,10 +126,10 @@ npm install
    npm start
    ```
 
-   Runs the app in the development mode.\
+   Runs the app in the development mode.
    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-   The page will reload when you make changes.\
+   The page will reload when you make changes.
    You may also see any lint errors in the console.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -172,7 +178,7 @@ Useful examples of how to use the app
 
 <img src="img/emptyHome.png" alt="empty trush example" width="80" height="80">
 
-Post it's state is saved in LocalStorage so you can refresh te page and still see the Post its. Be sure you dont have your browser configured to deny permission to persist data.
+Post it's state is saved in LocalStorage so you can refresh the page and still see the Post its. Be sure you dont have your browser configured to deny permission to persist data.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -197,7 +203,5 @@ Project Link: [https://github.com/YoanaAri/post-it-board](https://github.com/Yoa
 [stars-url]: https://github.com/YoanaAri/post-it-board/stargazers
 [issues-shield]: https://img.shields.io/github/issues/YoanaAri/post-it-board.svg?style=for-the-badge
 [issues-url]: https://github.com/YoanaAri/post-it-board/issues
-[license-shield]: https://img.shields.io/github/license/YoanaAri/post-it-board.svg?style=for-the-badge
-[license-url]: https://github.com/YoanaAri/post-it-board/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/yoana-aristimuño-716a25213/
