@@ -19,6 +19,7 @@ function PostItForm({ onSubmit }) {
       isediting: false,
     };
     onSubmit(newPostIt);
+    setInput('');
   };
   //
   //
@@ -32,6 +33,7 @@ function PostItForm({ onSubmit }) {
         type="text"
         placeholder="Ingresar texto"
         name="text"
+        value={input}
         onChange={typing}
       />
       <button

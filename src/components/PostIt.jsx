@@ -70,9 +70,9 @@ function PostIt({
         )
         : (
           <div
-            className="bg-amber-200"
+            className="bg-amber-200 "
           >
-            <p className="whitespace-normal truncate text-center w-40 h-32">
+            <p className="whitespace-normal overflow-auto text-center w-40 h-32">
               {text}
             </p>
           </div>

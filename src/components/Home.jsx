@@ -69,6 +69,7 @@ function Home() {
     setIsempty(updateIsempty);
   }, [deletedPostIt]);
   //
+
   return (
     <div className="flex flex-col p-8">
       <Link to="/Bin" className="h-8 w-8 cursor-pointer">
