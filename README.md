@@ -8,7 +8,7 @@
 <h3 align="center">Post It Board</h3>
 
   <p align="center">
-    App to creat a Post it Board
+    App to create a Post it Board
     <br />
     <a href="https://github.com/YoanaAri/post-it-board"><strong>Explore the docs »</strong></a>
     <br />
@@ -92,7 +92,7 @@ React Icon (added to use icons)
   npm install react-router-dom
   ```
 
-  Uuid (added to creat a random and unique id)
+  Uuid (added to create a random and unique id)
 
 - npm
   ```sh
