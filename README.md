@@ -47,9 +47,9 @@
 
 ## About The Project
 
-This proyect had made it after four intensive weeks of a coding bootcamp to empower women in the tech industry, MooveCamp '22, carried out for Moove It.
+This project was made after four intensive weeks of coding bootcamp to empower women in the tech industry, MooveCamp '22, was carried out for Moove It.
 
-Technologies we used:
+Technologies used:
 
 <ul>
   <li>Html</li>
@@ -58,7 +58,7 @@ Technologies we used:
   <li>React</li>
 </ul>
 
-In this App you will can: add, edit, delete, recover and permanent delete post its from a board
+In this App you can: add, edit, delete, recover and permanent delete post its from a board
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -72,7 +72,7 @@ In this App you will can: add, edit, delete, recover and permanent delete post i
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps:
+To get a local copy up and running follow these simple steps:
 
 ### Prerequisites
 
@@ -133,7 +133,7 @@ React Icon (added to use icons)
 
 Useful examples of how to use the app
 
-### Add Post its
+### Add Post it
 
 <img src="src/img/examples/emptyHome.PNG" alt="add Post it example" width="240" height="160">
 
@@ -171,7 +171,7 @@ Useful examples of how to use the app
 
 <img src="src/img/examples/emptyHome.PNG" alt="empty trush example" width="240" height="160">
 
-Post it's state is saved in LocalStorage so you can refresh the page and still see the Post its. Be sure you dont have your browser configured to deny permission to persist data.
+Post it's state is saved in LocalStorage so you can refresh the page and still see the Post its. Make sure you don't have your browser configured to deny permission to persist data.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
