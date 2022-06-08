@@ -8,7 +8,7 @@
 <h3 align="center">Post It Board</h3>
 
   <p align="center">
-    project_description
+    App to creat a Post it Board
     <br />
     <a href="https://github.com/YoanaAri/post-it-board"><strong>Explore the docs »</strong></a>
     <br />
