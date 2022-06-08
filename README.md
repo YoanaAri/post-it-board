@@ -84,7 +84,7 @@ React Icon (added to use icons)
   npm install react-icons --save
   ```
 
-  React Dom (added to managed the aplication routing)
+React Dom (added to managed the aplication routing)
 
 - npm
 
@@ -92,7 +92,7 @@ React Icon (added to use icons)
   npm install react-router-dom
   ```
 
-  Uuid (added to create a random and unique id)
+Uuid (added to create a random and unique id)
 
 - npm
   ```sh
